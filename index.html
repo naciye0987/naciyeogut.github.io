@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naciye Öğüt - Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Naciye Öğüt</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+                <li><a href="#hakkımda">Hakkımda</a></li>
+                <li><a href="#ozgecmis">Özgeçmiş</a></li>
+                <li><a href="#yetenekler">Yetenekler</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="ana-sayfa">
+        <div class="hero-banner">
+            <img src="img/banner.jpg" alt="Naciye Öğüt - Web Tasarımcısı" class="hero-banner-image">
+            <div class="hero-banner-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-buttons">
+                <a href="#projeler" class="btn-primary">
+                    <span>Projelerimi İncele</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#iletisim" class="btn-secondary">İletişime Geç</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkımda" class="about-section">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Hakkımda</h2>
+        </div>
+        <p class="section-description">Yaratıcı çözümler ve modern teknolojilerle web deneyimlerini şekillendiriyorum.</p>
+        
+        <div class="about-container">
+            <div class="about-text">
+                <h3 class="about-intro">Yeni nesil <span class="highlight-text">web tasarımcısı</span></h3>
+                <p class="about-description">
+                    Merhaba, ben <strong>Naciye Öğüt</strong>. Web tasarımı, UI/UX ve Django backend projeleri geliştiriyorum. 
+                    Aynı zamanda AI projeleri üzerine çalışıyorum (ResNet50, TensorFlow, Keras). Modern, hızlı, güvenli ve 
+                    kullanıcı odaklı web projeleri geliştirmeyi hedefliyorum. Hem frontend hem backend alanında deneyimliyim.
+                </p>
+                
+                <p class="about-description">
+                    <strong>NART Bilişim Hizmetleri</strong>'nde uzun dönem stajyer olarak web geliştirici pozisyonunda staj yaptım. 
+                    Django, Bootstrap, MySQL ve admin panel yönetimi üzerine web tabanlı projelerde aktif olarak çalıştım. 
+                    Kurumsal projelerde backend geliştirme ve veritabanı yönetimi konularında deneyim kazandım.
+                </p>
+            </div>
+            
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Modern Tasarım</h4>
+                        <p>Güncel tasarım trendlerini takip ediyorum ve kullanıcı deneyimini ön planda tutuyorum</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Hızlı Geliştirme</h4>
+                        <p>Etkili ve verimli çözümler üretiyorum, projeleri zamanında teslim ediyorum</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Yenilikçi Yaklaşım</h4>
+                        <p>Yeni teknolojileri öğrenmeye açığım ve projelerime en son trendleri uyguluyorum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="ozgecmis">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Özgeçmişim</h2>
+        </div>
+        <div class="cv-container">
+            <div class="cv-viewer">
+                <div class="cv-viewer-toolbar">
+                    <div class="cv-toolbar-left">
+                        <span class="cv-toolbar-icon">☰</span>
+                        <span class="cv-toolbar-icon">▼</span>
+                        <span class="cv-toolbar-icon">T</span>
+                        <span class="cv-toolbar-icon">⋯</span>
+                    </div>
+                    <div class="cv-toolbar-center">
+                        <span class="cv-toolbar-icon">−</span>
+                        <span class="cv-zoom">66%</span>
+                        <span class="cv-toolbar-icon">+</span>
+                        <span class="cv-toolbar-icon">📄</span>
+                        <span class="cv-page-info">1 / 1</span>
+                        <span class="cv-toolbar-icon">🔍</span>
+                        <span class="cv-toolbar-icon">🖨️</span>
+                        <span class="cv-toolbar-icon">💾</span>
+                        <span class="cv-toolbar-icon">⋯</span>
+                    </div>
+                </div>
+                <div class="cv-viewer-content">
+                    <div class="cv-sidebar">
+                        <div class="cv-thumbnail">1</div>
+                    </div>
+                    <div class="cv-preview-wrapper">
+                        <div class="cv-preview">
+                            <iframe src="cv.pdf/Naciye-Ogut-CV.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" class="cv-iframe"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="cv.pdf/Naciye-Ogut-CV.pdf" download="Naciye-Ogut-CV.pdf" class="btn-cv">CV'yi İndir</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="yetenekler" class="skills-section">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Teknik Yetenekler</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <div class="category-header">
+                    <h3>Tasarım & Frontend</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">UI/UX Tasarım</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <div class="category-header">
+                    <h3>Backend & Framework</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">Django</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">Laravel</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <div class="category-header">
+                    <h3>Diğer Yetkinlikler</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">AI Temelleri</span>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">TensorFlow / Keras</span>
+                            <span class="skill-level">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-row">
+                            <span class="skill-name">ResNet50</span>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projeler" class="projects-section">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Projelerim</h2>
+        </div>
+        <p class="section-description">Tamamladığım projelerden bazıları. Her biri modern teknolojiler ve en iyi pratikler kullanılarak geliştirilmiştir.</p>
+        
+        <div class="projects-grid">
+            <!-- Proje 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje1.jpg" alt="E-ticaret Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-ticaret Web Sitesi</h3>
+                    <p>Toptan kimyasal ve tüketici ürünleri ticaretini hedefleyen, tam işlevli bir B2B (Business-to-Business) odaklı e-ticaret platformunun geliştirilmesi.</p>
+                    <a href="#proje1" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+
+            <!-- Proje 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje2.jpg" alt="Blog Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">CMS</span>
+                            <span class="tech-tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Blog Web Sitesi</h3>
+                    <p>Django framework'ü kullanılarak sıfırdan oluşturulmuş, kapsamlı bir içerik yönetim sistemi (CMS).</p>
+                    <a href="#proje2" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+
+            <!-- Proje 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje3.jpg" alt="Teksanlift Kurumsal Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Teksanlift Kurumsal Web Sitesi</h3>
+                    <p>Teksan Lift firmasının ürün ve hizmetlerini uluslararası standartlarda tanıtan, kurumsal kimliğe uygun web sitesi.</p>
+                    <a href="#proje3" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+
+            <!-- Proje 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje4.jpg" alt="Kurumsal Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Kurumsal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Kurumsal Web Sitesi</h3>
+                    <p>Endüstriyel paketleme makinaları sektörüne yönelik, firmanın güvenilirliğini ön plana çıkaran kurumsal web sitesi.</p>
+                    <a href="#proje4" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+
+            <!-- Proje 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje5.jpg" alt="Webrtc Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Webrtc Web Sitesi</h3>
+                    <p>WebRTC API'leri kullanmadan, yani tarayıcılar arası doğrudan gerçek zamanlı iletişim (Peer-to-Peer).</p>
+                    <a href="#proje5" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+
+            <!-- Proje 6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/proje6.jpg" alt="Tanıtım Web Sitesi">
+                    <div class="project-overlay">
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Tanıtım</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Tanıtım Web Sitesi</h3>
+                    <p>Gaziantep Barak Türkmenleri'nin tarihini, ozanlarını, düğünlerini ve yöresel yemeklerini kapsayan tanıtım web sitesi.</p>
+                    <a href="#proje6" class="btn-outline">Detayları Gör</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proje Detayları -->
+        <!-- Proje 1 Detay -->
+        <div class="project-detail" id="proje1">
+            <div class="project-detail-header">
+                <h3>E-ticaret Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">B2B</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                Toptan kimyasal ve tüketici ürünleri ticaretini hedefleyen, tam işlevli bir B2B (Business-to-Business) odaklı e-ticaret platformunun geliştirilmesi. 
+                Proje, üye olmadan fiyat görme kısıtlaması gibi B2B gereksinimlerine uygun olarak tasarlanmıştır. Kullanıcı yönetimi, ürün kataloğu, 
+                sepet sistemi, sipariş takibi ve yönetim paneli gibi özellikler içermektedir.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje1-detay1.jpg" alt="E-ticaret Ana Sayfa">
+                <img src="img/proje1-detay2.jpg" alt="E-ticaret Ürün Sayfası">
+                <img src="img/proje1-detay3.jpg" alt="E-ticaret Yönetim Paneli">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+
+        <!-- Proje 2 Detay -->
+        <div class="project-detail" id="proje2">
+            <div class="project-detail-header">
+                <h3>Blog Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">CMS</span>
+                    <span class="tag">SEO</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                Django framework'ü kullanılarak sıfırdan oluşturulmuş, kapsamlı bir içerik yönetim sistemi (CMS). Proje, güvenli kullanıcı doğrulama, 
+                tam CRUD yetenekli yazı yönetimi, yorum sistemi ve SEO dostu temiz URL (slug) yapısı sunar. Django ORM ve Admin panelini özelleştirme 
+                yeteneğimi sergileyen, temel bir web uygulamasıdır.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje2-detay1.jpg" alt="Blog Ana Sayfa">
+                <img src="img/proje2-detay2.jpg" alt="Blog Yazı Detay">
+                <img src="img/proje2-detay3.jpg" alt="Blog Admin Panel">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+
+        <!-- Proje 3 Detay -->
+        <div class="project-detail" id="proje3">
+            <div class="project-detail-header">
+                <h3>Teksanlift Kurumsal Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Responsive</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                Teksan Lift firmasının ürün ve hizmetlerini (asansör sistemleri, yedek parça, modernizasyon) uluslararası standartlarda tanıtan, 
+                kurumsal kimliğe uygun, hızlı ve mobil uyumlu bir web sitesi projesi. Servis talep formu, WhatsApp entegrasyonu ve galeri bölümleri içermektedir.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje3-detay1.jpg" alt="Teksanlift Ana Sayfa">
+                <img src="img/proje3-detay2.jpg" alt="Teksanlift Hizmetler">
+                <img src="img/proje3-detay3.jpg" alt="Teksanlift İletişim">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+
+        <!-- Proje 4 Detay -->
+        <div class="project-detail" id="proje4">
+            <div class="project-detail-header">
+                <h3>Kurumsal Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Kurumsal</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                Endüstriyel paketleme makinaları sektörüne yönelik, firmanın güvenilirliğini ve küresel erişimini (Irak, Afrika, Kazakistan vb. ihracat) 
+                ön plana çıkaran profesyonel bir kurumsal web sitesi projesidir. Ürün kataloğu, referanslar ve iletişim bölümleri bulunmaktadır.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje4-detay1.jpg" alt="Kurumsal Ana Sayfa">
+                <img src="img/proje4-detay2.jpg" alt="Kurumsal Ürünler">
+                <img src="img/proje4-detay3.jpg" alt="Kurumsal Referanslar">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+
+        <!-- Proje 5 Detay -->
+        <div class="project-detail" id="proje5">
+            <div class="project-detail-header">
+                <h3>WebRTC Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">WebRTC</span>
+                    <span class="tag">WebSocket</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                WebRTC API'leri kullanmadan, yani tarayıcılar arası doğrudan gerçek zamanlı iletişimi (Peer-to-Peer) atlayarak Laravel üzerinden kısaca bir iletişim veya bildirim sistemi kurmak istiyorsanız, odaklanmanız gereken yer WebSocket teknolojisidir.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje5-detay1.jpg" alt="WebRTC Ana Sayfa">
+                <img src="img/proje5-detay2.jpg" alt="WebRTC Görüşme Ekranı">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+
+        <!-- Proje 6 Detay -->
+        <div class="project-detail" id="proje6">
+            <div class="project-detail-header">
+                <h3>Tanıtım Web Sitesi</h3>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Tanıtım</span>
+                </div>
+            </div>
+            <p class="project-detail-text">
+                Gaziantep Barak Türkmenleri'nin tarihini, ozanlarını, düğünlerini ve yöresel yemeklerini kapsayan zengin, çok kategorili içeriği 
+                akıcı ve mobil uyumlu bir arayüzle sunmaktadır. Bu proje, hızlı yükleme performansı ve kapsamlı içerik düzenleme (HTML/CSS) yeteneklerimi sergilemektedir.
+            </p>
+            <div class="project-gallery">
+                <img src="img/proje6-detay1.jpg" alt="Tanıtım Ana Sayfa">
+                <img src="img/proje6-detay2.jpg" alt="Tanıtım Kategoriler">
+                <img src="img/proje6-detay3.jpg" alt="Tanıtım İçerik">
+            </div>
+            <div class="back-link">
+                <a href="#projeler">← Projeler listesine dön</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Section -->
+    <section id="iletisim" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">İletişim</h2>
+            </div>
+            <p class="contact-subtitle">Projeleriniz için benimle iletişime geçin. Size yardımcı olmaktan mutluluk duyarım.</p>
+            
+            <div class="contact-main">
+                <div class="contact-info-grid">
+                    <div class="contact-item-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>E-posta</h3>
+                            <a href="mailto:naciyeogut22@gmail.com">naciyeogut22@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>Telefon</h3>
+                            <a href="tel:+905510289017">+90 551 028 90 17</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h3>Konum</h3>
+                            <p>Gaziantep, Türkiye</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-section">
+                    <h3>Sosyal Medya</h3>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn github" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-btn linkedin" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            © 2025 Naciye Öğüt • Tüm Hakları Saklıdır
+        </div>
+    </footer>
+
+</body>
+</html>
