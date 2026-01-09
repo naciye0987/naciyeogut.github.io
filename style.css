@@ -916,17 +916,17 @@ section {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.75rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .skills-category {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 2rem;
+    border-radius: 18px;
+    padding: 1.75rem;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -959,9 +959,9 @@ section {
 .category-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
+    gap: 0.875rem;
+    margin-bottom: 1.375rem;
+    padding-bottom: 0.875rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -971,7 +971,7 @@ section {
 
 .category-header h3 {
     color: var(--accent);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
 }
@@ -979,13 +979,13 @@ section {
 .skills-list {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.125rem;
 }
 
 .skill-item {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.55rem;
 }
 
 .skill-name-row {
@@ -997,18 +997,18 @@ section {
 .skill-name {
     color: var(--text-primary);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .skill-level {
     color: var(--accent);
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .skill-bar {
     width: 100%;
-    height: 6px;
+    height: 5.5px;
     background: var(--bg-dark);
     border-radius: 10px;
     overflow: hidden;
@@ -1648,6 +1648,36 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        padding-top: 70px;
+        height: 100vh;
+    }
+    
+    .hero-banner {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .hero-banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        padding-top: 2rem;
+        min-height: auto;
+        position: relative;
+        z-index: 2;
+    }
+
     .navbar {
         padding: 1rem;
     }
@@ -1753,6 +1783,7 @@ section {
 
     .cv-viewer-content {
         flex-direction: column;
+        min-height: auto;
     }
 
     .cv-sidebar {
@@ -1762,6 +1793,7 @@ section {
         justify-content: center;
         border-right: none;
         border-bottom: 1px solid #c0c0c0;
+        min-height: auto;
     }
 
     .cv-thumbnail {
@@ -1769,18 +1801,48 @@ section {
         margin-right: 0.5rem;
     }
 
+    .cv-preview-wrapper {
+        padding: 0.5rem;
+        overflow: visible;
+    }
+
     .cv-preview {
-        height: 200px;
+        height: 400px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cv-iframe {
+        width: 100%;
+        height: 100%;
     }
 
     .cv-viewer-toolbar {
         flex-wrap: wrap;
+        font-size: 0.65rem;
+        padding: 0.4rem 0.5rem;
+        min-height: 36px;
+    }
+
+    .cv-toolbar-icon {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.3rem;
+        min-width: 18px;
+    }
+
+    .cv-zoom,
+    .cv-page-info {
         font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0 0.3rem;
     }
 
     .cv-container {
-        padding: 1.5rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .cv-viewer {
+        margin-bottom: 1rem;
     }
 
     .about-container {
@@ -1971,6 +2033,27 @@ section {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: 100vh;
+        height: 100vh;
+        padding-top: 60px;
+    }
+    
+    .hero-banner {
+        height: 100vh;
+    }
+    
+    .hero-banner-image {
+        min-height: 100vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+    
+    .hero-content {
+        padding-top: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -2000,6 +2083,26 @@ section {
         object-fit: contain;
         object-position: center;
     }
+
+    .cv-container {
+        padding: 0.75rem;
+        margin: 0 0.5rem;
+    }
+
+    .cv-preview {
+        height: 350px;
+    }
+
+    .cv-viewer-toolbar {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    .cv-toolbar-icon {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.25rem;
+    }
+
 
 }
 
